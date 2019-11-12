@@ -1,0 +1,12 @@
+{
+    "body": "{\"categoryName\":\"Category 1 New\", \"lastUpdatedBy\": \"us-east-1:3b939819-1441-4d67-8a26-8b31691cd49b\"}",
+    "pathParameters": {
+        "id": "3029e7f0-f00b-11e9-9d84-733c7e734e11"
+      },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }
+  

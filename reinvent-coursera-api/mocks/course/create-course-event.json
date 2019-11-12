@@ -1,0 +1,11 @@
+{
+    "body": "{\"instructorId\":\"2222-222-22-22\",\"content\":[{\"id\":\"1\",\"title\":\"some title\", \"content\":\"conetenete1\"}],\"courseName\":\"Course 1\",\"title\":\"Course 1 Title\",\"categoryId\":\"3333-333-333\",\"description\":\"Course 1 description\" , \"createdBy\": \"us-east-1:3b939819-1441-4d67-8a26-8b31691cd49b\"}",
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }
+  
+
+

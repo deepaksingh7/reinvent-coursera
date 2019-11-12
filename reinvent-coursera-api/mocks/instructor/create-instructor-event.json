@@ -1,0 +1,8 @@
+{
+  "body": "{\"firstName\":\"ABC\",\"lastName\":\"ABC_LAST\",\"email\":\"xyz@email.com\",\"occupation\":\"freelancer\",\"description\":\"Dummy description\", \"createdBy\": \"us-east-1:3b939819-1441-4d67-8a26-8b31691cd49b\"}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}

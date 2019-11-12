@@ -1,0 +1,38 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo Installing serverless...
+      - apt-get update -y
+      - npm install -g serverless@1.51.0
+    finally:
+      - echo install exit 
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+      - echo Installing source NPM dependencies...
+      - npm install
+    finally:
+      - echo pre_build exit
+  build:
+    commands:
+      - echo Entered the build phase and deployment phase...
+      - echo Deployment started on `date`
+      - echo $DELETE_STACK
+      - |
+          if [ "$DELETE_STACK" = "yes" ]; then
+            echo "Removing stack"
+            serverless remove -v -s $ENV_NAME --region $AWS_DEFAULT_REGION
+          else
+            echo "Deploying stack"
+            serverless deploy -v -s $ENV_NAME --region $AWS_DEFAULT_REGION
+          fi
+    finally:
+      - echo build exit
+  post_build:
+    commands:
+      - echo Entered the post_build phase and post_deployment phase...
+      - echo Deployment completed on `date`
