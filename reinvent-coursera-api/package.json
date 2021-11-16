@@ -9,7 +9,7 @@
   "author": "Pooja K",
   "license": "MIT",
   "devDependencies": {
-    "aws-sdk": "^2.494.0",
+    "aws-sdk": "^2.814.0",
     "serverless-bundle": "^1.2.5",
     "serverless-offline": "^5.3.3"
   },
